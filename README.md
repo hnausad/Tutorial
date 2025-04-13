@@ -1,6 +1,6 @@
 # Tutorial
 Q1. What are 4 OOPS principal in java?
-In Java, the **four main Object-Oriented Programming (OOP) principles** are:
+### In Java, the **four main Object-Oriented Programming (OOP) principles** are:
 
 ---
 
