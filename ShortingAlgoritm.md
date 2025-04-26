@@ -1,16 +1,16 @@
 ## 1. Bubble Sort
-void bubbleSort(int[] arr) {
-    int n = arr.length;
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-                int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
-        }
-    }
-}
+-void bubbleSort(int[] arr) {
+-    int n = arr.length;
+-    for (int i = 0; i < n - 1; i++) {
+-        for (int j = 0; j < n - i - 1; j++) {
+-            if (arr[j] > arr[j + 1]) {
+-                int temp = arr[j];
+-                arr[j] = arr[j + 1];
+-                arr[j + 1] = temp;
+-            }
+-        }
+-    }
+-}
 Best Case: O(n)
 
 Worst Case: O(n²)
@@ -37,7 +37,7 @@ Time: O(n²)
 
 Use Case: When memory writes are costly.
 
-======================================================
+---
 ## 3. Insertion Sort
 void insertionSort(int[] arr) {
     for (int i = 1; i < arr.length; i++) {
@@ -56,7 +56,8 @@ Best Case: O(n)
 Worst Case: O(n²)
 
 Use Case: Small data or nearly sorted arrays.
-======================================================
+
+---
 
 ## 4. Merge Sort
 void mergeSort(int[] arr, int left, int right) {
@@ -92,7 +93,8 @@ void merge(int[] arr, int left, int mid, int right) {
 Time: O(n log n)
 
 Use Case: Large datasets, stable sort needed.
-======================================================
+
+---
 ## 5. Quick Sort
 void quickSort(int[] arr, int low, int high) {
     if (low < high) {
@@ -117,7 +119,9 @@ int partition(int[] arr, int low, int high) {
 Worst Case: O(n²) (rare)
 
 Use Case: Fastest in practice for large arrays.
-======================================================
+
+---
+
 ## 6. Heap Sort
 void heapSort(int[] arr) {
     int n = arr.length;
@@ -148,7 +152,9 @@ void heapify(int[] arr, int n, int i) {
 Time: O(n log n)
 
 Use Case: In-place sort, not stable.
-======================================================
+
+---
+
  ## 7. Counting Sort
 void countingSort(int[] arr) {
     int max = Arrays.stream(arr).max().getAsInt();
@@ -165,7 +171,8 @@ Time: O(n + k)
 
 Use Case: Sorting integers within a fixed small range.
 
-======================================================
+---
+
 ## 8. Radix Sort (for integers)
 void radixSort(int[] arr) {
     int max = Arrays.stream(arr).max().getAsInt();
@@ -190,7 +197,9 @@ void countingSortByDigit(int[] arr, int exp) {
 Time: O(nk) where k is number of digits.
 
 Use Case: Large list of integers with uniform length.
-======================================================
+
+---
+
 ## 9. Bucket Sort
 void bucketSort(float[] arr) {
     int n = arr.length;
@@ -208,7 +217,9 @@ void bucketSort(float[] arr) {
 Time: O(n + k)
 
 Use Case: Uniformly distributed floating point numbers.
-======================================================
+
+---
+
 ## 10. Shell Sort
 void shellSort(int[] arr) {
     int n = arr.length;
