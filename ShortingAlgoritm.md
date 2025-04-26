@@ -17,7 +17,7 @@ Worst Case: O(n²)
 
 Use Case: Small or mostly sorted lists.
 
-======================================================
+---
 ## 2. Selection Sort
 void selectionSort(int[] arr) {
     int n = arr.length;
